@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0203C690-822F-4C34-B2E9-5495BD11D597}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nova.Database</RootNamespace>
+    <AssemblyName>Nova.Database</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Migrations\201812142247219_Initial.cs" />
+    <Compile Include="Migrations\201812142247219_Initial.Designer.cs">
+      <DependentUpon>201812142247219_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812150312286_ImageUrlAdded.cs" />
+    <Compile Include="Migrations\201812150312286_ImageUrlAdded.Designer.cs">
+      <DependentUpon>201812150312286_ImageUrlAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812150419003_New.cs" />
+    <Compile Include="Migrations\201812150419003_New.Designer.cs">
+      <DependentUpon>201812150419003_New.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812151231446_Config.cs" />
+    <Compile Include="Migrations\201812151231446_Config.Designer.cs">
+      <DependentUpon>201812151231446_Config.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812151236213_ConfigEdit.cs" />
+    <Compile Include="Migrations\201812151236213_ConfigEdit.Designer.cs">
+      <DependentUpon>201812151236213_ConfigEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812151328353_Entity.cs" />
+    <Compile Include="Migrations\201812151328353_Entity.Designer.cs">
+      <DependentUpon>201812151328353_Entity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812151407470_shop.cs" />
+    <Compile Include="Migrations\201812151407470_shop.Designer.cs">
+      <DependentUpon>201812151407470_shop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812151420352_Order.cs" />
+    <Compile Include="Migrations\201812151420352_Order.Designer.cs">
+      <DependentUpon>201812151420352_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="NovaContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nova.Entities\Nova.Entities.csproj">
+      <Project>{6F783696-8389-4526-9497-BD2CF360186E}</Project>
+      <Name>Nova.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201812142247219_Initial.resx">
+      <DependentUpon>201812142247219_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812150312286_ImageUrlAdded.resx">
+      <DependentUpon>201812150312286_ImageUrlAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812150419003_New.resx">
+      <DependentUpon>201812150419003_New.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812151231446_Config.resx">
+      <DependentUpon>201812151231446_Config.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812151236213_ConfigEdit.resx">
+      <DependentUpon>201812151236213_ConfigEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812151328353_Entity.resx">
+      <DependentUpon>201812151328353_Entity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812151407470_shop.resx">
+      <DependentUpon>201812151407470_shop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812151420352_Order.resx">
+      <DependentUpon>201812151420352_Order.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,17 @@
+M:\Reza\Nova\Nova.Services\obj\Debug\Nova.Services.csprojAssemblyReference.cache
+M:\Reza\Nova\Nova.Services\obj\Debug\Nova.Services.csproj.CoreCompileInputs.cache
+M:\Reza\Nova\Nova.Services\bin\Debug\Nova.Services.dll
+M:\Reza\Nova\Nova.Services\bin\Debug\Nova.Services.pdb
+M:\Reza\Nova\Nova.Services\bin\Debug\Nova.Database.dll
+M:\Reza\Nova\Nova.Services\bin\Debug\Nova.Entities.dll
+M:\Reza\Nova\Nova.Services\bin\Debug\EntityFramework.dll
+M:\Reza\Nova\Nova.Services\bin\Debug\Nova.Database.pdb
+M:\Reza\Nova\Nova.Services\bin\Debug\Nova.Database.dll.config
+M:\Reza\Nova\Nova.Services\bin\Debug\Nova.Entities.pdb
+M:\Reza\Nova\Nova.Services\bin\Debug\EntityFramework.xml
+M:\Reza\Nova\Nova.Services\obj\Debug\Nova.Services.csproj.CopyComplete
+M:\Reza\Nova\Nova.Services\obj\Debug\Nova.Services.dll
+M:\Reza\Nova\Nova.Services\obj\Debug\Nova.Services.pdb
+M:\Reza\Nova\Nova.Services\bin\Debug\Nova.Services.dll.config
+M:\Reza\Nova\Nova.Services\bin\Debug\EntityFramework.SqlServer.dll
+M:\Reza\Nova\Nova.Services\bin\Debug\EntityFramework.SqlServer.xml

@@ -1,0 +1,6 @@
+M:\Reza\Nova\Nova.Entities\bin\Debug\Nova.Entities.dll
+M:\Reza\Nova\Nova.Entities\bin\Debug\Nova.Entities.pdb
+M:\Reza\Nova\Nova.Entities\obj\Debug\Nova.Entities.csproj.CoreCompileInputs.cache
+M:\Reza\Nova\Nova.Entities\obj\Debug\Nova.Entities.dll
+M:\Reza\Nova\Nova.Entities\obj\Debug\Nova.Entities.pdb
+M:\Reza\Nova\Nova.Entities\obj\Debug\Nova.Entities.csprojAssemblyReference.cache
